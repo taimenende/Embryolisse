@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Embryolisse</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-nav">
+      <div class="container-fluid">
+        <!-- Logo -->
+        <div class="navbar-brand-container">
+          <a class="navbar-brand" href="#">EMBRYOLISSE</a>
+        </div>
+
+        <!-- Menu items -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Lait-Crème</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Moisturizers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Anti-Aging</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Cleansers</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Exclusive Sets</a>
+            </li>
+          </ul>
+
+          <!-- Nav Icons -->
+          <div class="navbar-icons">
+            <a href="https://http.cat/images/444.jpg" class="icon-link" id="account-icon">
+              <i class="fas fa-user"></i>
+            </a>
+            <a href="https://http.cat/images/404.jpg" class="icon-link" id="cart-icon">
+              <i class="fas fa-shopping-bag"></i>
+            </a>
+          </div>
+
+          <!-- Search box -->
+          <div id="search-box" class="search-box">
+            <input type="text" placeholder="Search..." class="search-input" id="searchInput" />
+            <button class="search-button" id="searchButton">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+    </nav>
+
+    <!-- Product Section -->
+    <div class="container my-5">
+      <div class="row d-flex align-items-center">
+        <!-- Product Image -->
+        <div class="col-md-5 me-5 text-center">
+          <img
+            src="https://us.embryolisse.com/cdn/shop/products/EB203000_01_32033547-8a63-45e7-8b33-a10b4a6e62f1.jpg?v=1685993556&width=1200"
+            class="img-fluid rounded"
+            alt="Lait-Crème Sensitive - Fragrance Free"
+          />
+        </div>
+        <!-- Product Details -->
+        <div class="col-md-6">
+          <h1>Lait-Crème Sensitive</h1>
+          <div class="rating mb-3">
+            <span class="text-warning">★★★★★</span>
+            <small>4.9/5 (1,074 Reviews)</small>
+          </div>
+          <p class="h4 text-success">$32.00</p>   
+          <p class="my-3"><b>Size:</b> 3.38 FL Oz</p>
+
+      
+
+           <!-- Icons for Features -->
+           <div class="d-flex flex-wrap gap-3 mb-4">
+            <span
+              class="badge eco-friendly"
+              data-bs-toggle="tooltip"
+              title="Eco-Friendly"
+            >
+              <i class="fas fa-leaf"></i>
+            </span>
+            <span
+              class="badge dermatologist-approved"
+              data-bs-toggle="tooltip"
+              title="Dermatologist Approved"
+            >
+            <i class="fa-solid fa-flask"></i>
+            </span>
+            <span
+              class="badge favorite"
+              data-bs-toggle="tooltip"
+              title="Favorite"
+            >
+              <i class="fas fa-heart"></i>
+            </span>
+            <span
+              class="badge hypoallergenic"
+              data-bs-toggle="tooltip"
+              title="Hypoallergenic"
+            >
+              <i class="fas fa-allergies"></i>
+            </span>
+            <span
+              class="badge fragrance-free"
+              data-bs-toggle="tooltip"
+              title="Fragrance-Free"
+            >
+              <i class="fas fa-wind"></i>
+            </span>
+            <span
+              class="badge trending-now"
+              data-bs-toggle="tooltip"
+              title="Trending Now"
+            >
+              <i class="fas fa-fire"></i>
+            </span>
+          </div>
+          <hr class="gradient-separator" />
+
+          <!-- Quantity Selector -->
+          <div class="quantity-container">
+            <div class="quantity-info">
+              <label for="quantity" class="quantity-label">Quantity:</label>
+              <div class="warning">
+                <i class="fas fa-exclamation-circle"></i>
+                <span>Only few left!</span>
+              </div>
+            </div>
+          
+            <div class="quantity-controls">
+              <div class="input-group">
+                <button class="btn-decrement" id="decrement">–</button>
+                <input type="number" id="quantity" value="1" min="1" />
+                <button class="btn-increment" id="increment">+</button>
+              </div>
+              <button class="cart-btn" id="cartButton">Add to Cart</button>
+            </div>
+          </div>
+          
+
+         
+<!-- Product Tabs -->
+<div class="product-tabs-container my-5">
+  <ul class="nav nav-tabs custom-tabs" id="productTabs" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="benefits-tab" data-bs-toggle="tab" data-bs-target="#benefits" type="button" role="tab">
+        Benefits
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="how-to-use-tab" data-bs-toggle="tab" data-bs-target="#how-to-use" type="button" role="tab">
+        How to Use
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="ingredients-tab" data-bs-toggle="tab" data-bs-target="#ingredients" type="button" role="tab">
+        Ingredients
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="ecoconception-tab" data-bs-toggle="tab" data-bs-target="#ecoconception" type="button" role="tab">
+        Ecoconception
+      </button>
+    </li>
+  </ul>
+  <div class="tab-content custom-tab-content" id="productTabsContent">
+    <div class="tab-pane fade show active" id="benefits" role="tabpanel">
+      <p>✨ 7-in-1 multi-functional hydrating and nourishing moisturizer. Ideal for sensitive and reactive skin. Suitable for adults, children, and babies.</p>
+    </div>
+    <div class="tab-pane fade" id="how-to-use" role="tabpanel">
+      <p>🧴 Apply a small amount to clean skin, morning and evening. Gently massage until fully absorbed.</p>
+    </div>
+    <div class="tab-pane fade" id="ingredients" role="tabpanel">
+      <p>🌿 99% ingredients from natural origin. Hypoallergenic, non-comedogenic, fragrance-free, and odorless.</p>
+    </div>
+    <div class="tab-pane fade" id="ecoconception" role="tabpanel">
+      <p>🌍 Recyclable aluminum tube and packaging. Made in France with eco-friendly practices.</p>
+    </div>
+  </div>
+</div>
+        </div>
+      </div>  
+
+<!-- Reviews Section -->
+<div class="container mb-5 my-5">
+  <h2 class="reviews-title">Customer Reviews</h2>
+
+  <div class="review-card">
+    <div class="review-header">
+      <div>
+        <span class="review-name fs-5"><strong>Lindsey H</strong></span>
+      </div>
+      <div class="review-info">
+        <span class="review-location fs-6">San Diego, United States • 02 Mar 2025</span>
+        <span class="review-skin fs-6">Skin Type: <strong>Oily</strong></span>
+      </div>
+    </div>
+
+    <h5 class="review-title">Surprisingly Effective</h5>
+    <p class="review-text fs-5">
+      This product was recommended to me to help treat facial dermatitis I had developed out of nowhere, and while I can't say it helped specifically with that issue, I can confirm that it is now my forever face lotion...
+    </p>
+
+    <div class="review-tags">
+      <span class="badge">Easy To Use</span>
+      <span class="badge">Gentle</span>
+      <span class="badge">Great Results</span>
+    </div>
+
+    <div class="review-helpful fs-6">
+      <span>Was this review helpful?</span>
+      <button class="helpful-btn" onclick="incrementHelpful(this)" data-clicked="false">
+        <i class="fa-regular fa-thumbs-up fa-lg"></i> <span class="helpful-count">0</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="review-card">
+    <div class="review-header">
+      <div>
+        <span class="review-name fs-5"><strong>Deena Aram</strong></span>
+      </div>
+      <div class="review-info">
+        <span class="review-location fs-6">Toronto, Canada • 05 Mar 2025</span>
+        <span class="review-skin fs-6">Skin Type: <strong>Dry</strong></span>
+      </div>
+    </div>
+
+    <h5 class="review-title">I love it</h5>
+    <p class="review-text fs-5">
+      ’m a makeup artist, I’ve been using this cream for two years to prepare the skin before the foundation, it makes the skin so smooth and hydrated I’m literally obsessed 😍😍
+    </p>
+
+    <div class="review-tags">
+      <span class="badge">Easy To Use</span>
+      <span class="badge">Gentle</span>
+      <span class="badge">Hydrating</span>
+    </div>
+
+    <div class="review-helpful fs-6">
+      <span>Was this review helpful?</span>
+      <button class="helpful-btn" onclick="incrementHelpful(this)" data-clicked="false">
+        <i class="fa-regular fa-thumbs-up fa-lg"></i> <span class="helpful-count">0</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="review-card">
+    <div class="review-header">
+      <div>
+        <span class="review-name fs-5"><strong>Maureen T</strong></span>
+      </div>
+      <div class="review-info">
+        <span class="review-location fs-6">London, Canada • 01 Fev 2025</span>
+        <span class="review-skin fs-6">Skin Type: <strong>Combination</strong></span>
+      </div>
+    </div>
+
+    <h5 class="review-title">Great lightweight moisturizer</h5>
+    <p class="review-text fs-5">
+      This is the perfect formula for mature combination skin.  Highly moisturizing but also noncomedogenic.  Add mineral SPF and your favorite foundation  and you’ll achieve even skin without breakouts.  This is a great add to any skincare regimen.
+    </p>
+
+    <div class="review-tags">
+      <span class="badge">Great texture</span>
+      <span class="badge">Gentle</span>
+      <span class="badge">Hydrating</span>
+    </div>
+
+    <div class="review-helpful fs-6">
+      <span>Was this review helpful?</span>
+      <button class="helpful-btn" onclick="incrementHelpful(this)" data-clicked="false">
+        <i class="fa-regular fa-thumbs-up fa-lg"></i> <span class="helpful-count">0</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
