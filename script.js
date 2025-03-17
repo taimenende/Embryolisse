@@ -20,6 +20,15 @@ document.getElementById("decrement").addEventListener("click", () => {
   }
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const navbarToggler = document.querySelector(".navbar-toggler");
+  const navbarCollapse = document.querySelector(".navbar-collapse");
+
+  navbarToggler.addEventListener("click", function () {
+    navbarCollapse.classList.toggle("show");
+  });
+});
+
 // Magnifier
 document.addEventListener("DOMContentLoaded", function () {
   const img = document.querySelector(".col-md-5 img");

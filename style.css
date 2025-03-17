@@ -107,6 +107,152 @@ body {
   color: #000;
 }
 
+/* tablets */
+@media (max-width: 992px) {
+  .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-icons {
+    margin-top: 10px;
+  }
+
+  .search-box {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .navbar-collapse {
+    background-color: #f0e4d9;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .navbar-toggler {
+    border: none;
+  }
+
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(34, 14, 101, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+
+  .navbar-brand {
+    font-size: 2rem;
+  }
+
+  .nav-link {
+    font-size: 1.2rem;
+  }
+
+  .icon-link {
+    font-size: 1.2rem;
+  }
+
+  .search-input {
+    width: 150px;
+  }
+
+  .search-input:focus {
+    width: 200px;
+  }
+
+  .quantity-container {
+    max-width: 100%;
+  }
+
+  .quantity-controls {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .cart-btn {
+    width: 100%;
+  }
+
+  .review-card {
+    padding: 15px;
+  }
+
+  .review-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .review-info {
+    text-align: left;
+    margin-top: 10px;
+  }
+}
+
+/* mobile */
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+
+  .nav-link {
+    font-size: 1rem;
+  }
+
+  .icon-link {
+    font-size: 1rem;
+  }
+
+  .search-input {
+    width: 120px;
+  }
+
+  .search-input:focus {
+    width: 150px;
+  }
+
+  .quantity-container {
+    gap: 5px;
+  }
+
+  .quantity-info {
+    font-size: 1rem;
+  }
+
+  .warning {
+    font-size: 0.9rem;
+  }
+
+  .input-group {
+    width: 100%;
+  }
+
+  .cart-btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+
+  .review-card {
+    padding: 10px;
+  }
+
+  .review-title {
+    font-size: 1rem;
+  }
+
+  .review-text {
+    font-size: 0.9rem;
+  }
+
+  .review-tags .badge {
+    font-size: 0.8rem;
+  }
+
+  .review-helpful {
+    font-size: 0.8rem;
+  }
+}
+
 /* Product */
 img {
   width: 100%;
